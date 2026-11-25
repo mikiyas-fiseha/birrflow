@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="am" data-lang="am">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-PM95VSBD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BirrFlow (ብርፍሎው) — የኢትዮጵያ የግል ፋይናንስ እና የባንክ SMS መከታተያ</title>
@@ -32,22 +39,6 @@
       })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
       fbq("init", window.BIRRFLOW_PIXEL_ID);
       fbq("track", "PageView");
-    }
-  </script>
-  <!-- Google Analytics 4 (private to your Google Analytics account; replace REPLACE_WITH_YOUR_GA4_ID) -->
-  <script>
-    window.BIRRFLOW_GA4_ID = "REPLACE_WITH_YOUR_GA4_ID";
-    if (window.BIRRFLOW_GA4_ID && window.BIRRFLOW_GA4_ID !== "REPLACE_WITH_YOUR_GA4_ID") {
-      var gaScript = document.createElement("script");
-      gaScript.async = true;
-      gaScript.src = "https://www.googletagmanager.com/gtag/js?id=" + window.BIRRFLOW_GA4_ID;
-      document.head.appendChild(gaScript);
-      window.dataLayer = window.dataLayer || [];
-      window.gtag = function () {
-        dataLayer.push(arguments);
-      };
-      gtag("js", new Date());
-      gtag("config", window.BIRRFLOW_GA4_ID);
     }
   </script>
 </head>
